@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contato | NEO | Desenvolvedor Web</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Calistoga|Plaster|Quicksand&display=swap"
+    />
+
+    <link rel="stylesheet" href="./main.css?cb=123" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav" id="nav">
+        <a href="index.html">
+          <div class="nav__logo">
+            <img
+              src="/images/0_icones/neo-logo.svg"
+              alt="website logo"
+              class="logo__img"
+            />
+          </div>
+        </a>
+
+        <div class="nav__menu">
+          <button id="menu__btn">
+            <div class="menu__icon">
+              <div class="menuIcon__bar"></div>
+              <div class="menuIcon__bar"></div>
+              <div class="menuIcon__bar"></div>
+            </div>
+          </button>
+
+          <ul class="menu__list" id="menu__list">
+            <a href="index.html" class="menu__link">
+              <li>Home</li>
+            </a>
+
+            <a href="portfolio.html" class="menu__link">
+              <li>Portfolio</li>
+            </a>
+            <a href="sobre.html" class="menu__link">
+              <li>Sobre</li>
+            </a>
+            <a href="contato.html" class="menu__link">
+              <li>Contato</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="banner">
+        <div class="banner__bg">
+          <div
+            class="bg__img"
+            id="parallax__img"
+            data-parallax="scroll"
+            data-image-src="/images/4_contato/contato_banner.jpg"
+          ></div>
+
+          <div class="bg__gradient"></div>
+        </div>
+        <div class="banner__text">
+          <h1 class="text__title">Entre em contato</h1>
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <div class="main__contato">
+        <section class="contato__meioDeContato">
+          <section class="meioDeContato__item" id="meioDeContato__item--1">
+            <div class="item__icon">
+              <img
+                src="/images/0_icones/location.svg"
+                alt="ícone de localização"
+                class="icon__img"
+              />
+            </div>
+            <p class="item__text">Cidade | Estado | País</p>
+          </section>
+
+          <section
+            class="meioDeContato__item meioDeContato__item--black"
+            id="meioDeContato__item--2"
+          >
+            <div class="item__icon">
+              <img
+                src="/images/0_icones/mail.svg"
+                alt="ícone de email"
+                class="icon__img"
+              />
+            </div>
+            <p class="item__text">meu@email.com</p>
+          </section>
+
+          <section class="meioDeContato__item" id="meioDeContato__item--3">
+            <div class="item__icon">
+              <img
+                src="/images/0_icones/whatsapp.svg"
+                alt="ícone do whatsapp"
+                class="icon__img"
+              />
+            </div>
+            <p class="item__text">(12) 3 4567 - 8910</p>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <h1 class="footer__title">Criado por <span>Vinicius Bortoletto</span></h1>
+      <img
+        src="/images/0_icones/vini-logo.svg"
+        alt="logo de vinicius bortoletto"
+        class="footer__logo"
+      />
+    </footer>
+
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <!-- Parallax.JS -->
+    <script>
+      $("#parallax__img").parallax({
+        imageSrc: "/images/4_contato/contato_banner.jpg"
+      });
+    </script>
+
+    <!-- ScrollMagic -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="./main.js?cb=123"></script>
+  </body>
+</html>

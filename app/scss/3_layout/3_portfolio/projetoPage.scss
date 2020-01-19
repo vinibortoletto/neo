@@ -1,0 +1,90 @@
+.projetoPage {
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+
+    @extend %sidePadding-small;
+    margin-bottom: $m-small;
+  }
+
+  &__paragraph {
+    @extend %sidePadding-big;
+    margin-bottom: 1rem;
+  }
+
+  &__imgBox {
+    @extend %sidePadding-small;
+    margin: $m-medium 0 $m-medium 0;
+  }
+
+  &__imgBox--marginBottom {
+    margin-bottom: 0;
+  }
+
+  &__img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+
+    border: 1px solid rgba($c-black, 0.1);
+    border-radius: 0.2rem;
+  }
+
+  &__img--marginBottomNone {
+    margin-bottom: 0;
+  }
+}
+
+.main__livePreview {
+  @extend %sidePadding-small;
+  margin-top: 1rem;
+}
+
+.livePreview__btn {
+  width: 100%;
+  padding: 1rem;
+
+  border-radius: 0.2rem;
+  border-bottom-left-radius: 2rem;
+
+  background: $c-teal;
+  color: $c-white;
+
+  transition: 0.3s ease-out;
+
+  &:hover {
+    background: rgb(0, 94, 94);
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 2rem;
+  }
+}
+
+@include media(600px) {
+  .livePreview__btn {
+    width: 15rem;
+    padding: 2rem;
+
+    position: relative;
+    float: right;
+
+    font-size: 1.5rem;
+  }
+}
+
+@include media(900px) {
+  .projetoPage {
+    &__title {
+      padding: 0;
+      padding: 0 10vw;
+
+      font-size: 3rem;
+    }
+
+    &__paragraph {
+      padding: 0;
+      padding: 0 15vw;
+
+      font-size: 1.5rem;
+    }
+  }
+}

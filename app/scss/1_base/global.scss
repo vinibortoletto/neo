@@ -1,0 +1,63 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  color: $c-black;
+  opacity: 0;
+
+  animation: pageOnLoad 1s ease-out forwards;
+}
+
+.header {
+  margin-bottom: $m-big;
+  height: 100vh;
+}
+
+p {
+  text-align: justify;
+}
+
+.main {
+  margin-bottom: 20rem;
+  overflow: hidden;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $c-teal;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+
+input {
+  width: 15rem;
+  padding: 1rem;
+
+  font-family: "Quicksand", sans-serif;
+  background: none;
+
+  border: 1px solid $c-teal;
+  border-radius: 0.3rem;
+  color: $c-white;
+}
+
+::placeholder {
+  color: $c-teal;
+}
+
+@keyframes pageOnLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

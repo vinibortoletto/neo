@@ -1,0 +1,70 @@
+.main__contato {
+  .contato__meioDeContato {
+    @extend %sidePadding-small;
+  }
+
+  .meioDeContato {
+    &__item {
+      padding: 3rem 2rem;
+
+      background: $c-teal;
+      color: black;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &--black {
+        background: $c-black;
+        color: $c-white;
+
+        .item__icon {
+          border: 0.3rem solid $c-white;
+        }
+
+        .icon__img {
+          filter: invert(1);
+        }
+      }
+    }
+  }
+
+  .item {
+    &__icon {
+      width: 5rem;
+      height: 5rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin: 0 1rem 2rem 0;
+
+      border: 0.3rem solid black;
+      border-radius: 100%;
+    }
+
+    &__text {
+      font-weight: bold;
+    }
+  }
+
+  .icon__img {
+    width: 2rem;
+  }
+}
+
+@include media(700px) {
+  .main__contato {
+    .contato__meioDeContato {
+      display: flex;
+      justify-content: center;
+    }
+
+    .meioDeContato__item {
+      width: 100%;
+      margin: 0;
+      padding: 5rem 2rem;
+    }
+  }
+}

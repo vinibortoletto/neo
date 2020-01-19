@@ -1,0 +1,54 @@
+.banner__text--home {
+  width: 20rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  margin: 10rem auto 0 auto;
+
+  padding: 0;
+
+  opacity: 1;
+  animation: none;
+}
+
+.text__title--home {
+  overflow-wrap: break-word;
+  line-height: 0.7;
+
+  font-family: "Plaster", cursive;
+  font-size: 8rem;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $c-teal;
+}
+
+.text__subtitle--home {
+  margin: 0.5rem 1.5rem 0 0;
+  text-align: right;
+
+  font-weight: bold;
+  color: $c-white;
+}
+
+@include media(800px) {
+  .banner__text--home {
+    // margin-top: 10rem;
+    width: 100%;
+  }
+
+  .text__title--home {
+    font-size: 41vw;
+  }
+
+  .text__subtitle--home {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

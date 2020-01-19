@@ -1,0 +1,68 @@
+.banner {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+  top: 0;
+  z-index: -1;
+
+  &__bg {
+    .bg__img {
+      width: 100%;
+      height: 100vh;
+
+      background-repeat: no-repeat;
+      background-size: cover !important;
+      background-position: center;
+    }
+
+    .bg__gradient {
+      width: 100%;
+      height: 100vh;
+
+      background: linear-gradient(to bottom, transparent, $c-black);
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &__text {
+    @extend %sidePadding-big;
+
+    position: absolute;
+    bottom: 5rem;
+
+    opacity: 0;
+    animation: bannerText 0.5s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+}
+
+.text {
+  &__title {
+    font-size: 3rem;
+    font-family: "Calistoga", cursive;
+    color: $c-white;
+  }
+
+  &__subtitle {
+    color: $c-teal;
+  }
+}
+
+@keyframes bannerText {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@include media(1000px) {
+  .text__title {
+    font-size: 5rem;
+  }
+}

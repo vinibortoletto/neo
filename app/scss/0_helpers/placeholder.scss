@@ -1,0 +1,36 @@
+%filterInvert {
+  filter: invert(1);
+}
+
+%sidePadding-small {
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
+
+%sidePadding-big {
+  padding-right: 10vw;
+  padding-left: 10vw;
+}
+
+%scrollMagic-fromRight {
+  opacity: 0;
+  transform: translateX(10%);
+  transition: 0.5s ease-out;
+}
+
+%scrollMagic-fromLeft {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: 0.5s ease-out;
+}
+
+%scrollMagic-fromBottom {
+  opacity: 0;
+  transform: translateY(10%);
+  transition: 0.5s ease-out;
+}
+
+%scrollMagic-reset {
+  opacity: 1;
+  transform: translate(0);
+}

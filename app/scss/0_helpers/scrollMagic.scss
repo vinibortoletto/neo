@@ -1,0 +1,163 @@
+// Translate Y
+
+// Home page ----------------------------------------
+#intro__title,
+#projetosRecentes__title--projetos,
+#projetosRecentes__title--recentes,
+#projeto__img--1,
+#projeto__img--2,
+#projeto__img--3,
+#projeto__img--4,
+#livePreview__btn {
+  @extend %scrollMagic-fromBottom;
+}
+
+#skills__card--teal,
+#skills__card--black,
+#projeto__content--1,
+#projeto__content--3 {
+  @extend %scrollMagic-fromLeft;
+}
+
+#projeto__content--2 {
+  @extend %scrollMagic-fromRight;
+}
+
+#intro__title,
+#skills__card--teal,
+#skills__card--black,
+#projetosRecentes__title--projetos,
+#projetosRecentes__title--recentes,
+#projeto__content--1,
+#projeto__content--2,
+#projeto__content--3,
+#livePreview__btn {
+  &.fadeIn {
+    @extend %scrollMagic-reset;
+  }
+}
+
+// Home page & Portfolio page ----------------------------------------
+
+#projeto__date--1,
+#projeto__title--1,
+#projeto__date--2,
+#projeto__title--2,
+#projeto__date--3,
+#projeto__title--3,
+#projeto__date--4,
+#projeto__title--4 {
+  @extend %scrollMagic-fromLeft;
+}
+
+#projeto__description--1,
+#projeto__description--2,
+#projeto__description--3,
+#projeto__description--4 {
+  @extend %scrollMagic-fromRight;
+}
+
+#projeto__title--1,
+#projeto__date--1,
+#projeto__description--1,
+#projeto__btn--1,
+#projeto__title--2,
+#projeto__date--2,
+#projeto__description--2,
+#projeto__btn--2,
+#projeto__title--3,
+#projeto__date--3,
+#projeto__description--3,
+#projeto__btn--3,
+#projeto__title--4,
+#projeto__date--4,
+#projeto__description--4,
+#projeto__btn--4,
+#projeto__img--1,
+#projeto__img--2,
+#projeto__img--3,
+#projeto__img--4 {
+  &.fadeIn {
+    @extend %scrollMagic-reset;
+  }
+}
+
+// Sobre page  ----------------------------------------
+#profile__img,
+#sobre__logo {
+  @extend %scrollMagic-fromBottom;
+}
+
+#sobre__title,
+#sobre__paragraph {
+  @extend %scrollMagic-fromRight;
+}
+
+#profile__img,
+#sobre__title,
+#sobre__paragraph,
+#sobre__logo {
+  &.fadeIn {
+    @extend %scrollMagic-reset;
+  }
+}
+
+// Portfolio page  ----------------------------------------
+#projeto__btn--1,
+#projeto__btn--2,
+#projeto__btn--3,
+#projeto__btn--4 {
+  @extend %scrollMagic-fromBottom;
+}
+
+// Projeto page  ----------------------------------------
+
+#projetoPage__title--1,
+#projetoPage__title--2,
+#projetoPage__title--3 {
+  @extend %scrollMagic-fromLeft;
+}
+
+#projetoPage__paragraph--1,
+#projetoPage__paragraph--2,
+#projetoPage__paragraph--3,
+.projeto__ferramentasUsadas {
+  @extend %scrollMagic-fromRight;
+}
+
+#projetoPage__imgBox--1,
+#projetoPage__imgBox--2,
+#projetoPage__imgBox--3 {
+  @extend %scrollMagic-fromBottom;
+}
+
+#projetoPage__title--1,
+#projetoPage__title--2,
+#projetoPage__title--3,
+#projetoPage__paragraph--1,
+#projetoPage__paragraph--2,
+#projetoPage__paragraph--3,
+#projetoPage__imgBox--1,
+#projetoPage__imgBox--2,
+#projetoPage__imgBox--3,
+.projeto__ferramentasUsadas {
+  &.fadeIn {
+    @extend %scrollMagic-reset;
+  }
+}
+
+// Contato page ----------------------------
+
+#meioDeContato__item--1,
+#meioDeContato__item--2,
+#meioDeContato__item--3 {
+  @extend %scrollMagic-fromBottom;
+}
+
+#meioDeContato__item--1,
+#meioDeContato__item--2,
+#meioDeContato__item--3 {
+  &.fadeIn {
+    @extend %scrollMagic-reset;
+  }
+}
