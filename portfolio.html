@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio | NEO | Desenvolvedor Web</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Calistoga|Plaster|Quicksand&display=swap"
+    />
+
+    <link rel="stylesheet" href="./main.css?cb=123" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav" id="nav">
+        <a href="index.html">
+          <div class="nav__logo">
+            <img
+              src="/images/0_icones/neo-logo.svg"
+              alt="website logo"
+              class="logo__img"
+            />
+          </div>
+        </a>
+
+        <div class="nav__menu">
+          <button id="menu__btn">
+            <div class="menu__icon">
+              <div class="menuIcon__bar"></div>
+              <div class="menuIcon__bar"></div>
+              <div class="menuIcon__bar"></div>
+            </div>
+          </button>
+
+          <ul class="menu__list" id="menu__list">
+            <a href="index.html" class="menu__link">
+              <li>Home</li>
+            </a>
+
+            <a href="portfolio.html" class="menu__link">
+              <li>Portfolio</li>
+            </a>
+            <a href="sobre.html" class="menu__link">
+              <li>Sobre</li>
+            </a>
+            <a href="contato.html" class="menu__link">
+              <li>Contato</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="banner">
+        <div class="banner__bg">
+          <div
+            class="bg__img"
+            id="parallax__img"
+            data-parallax="scroll"
+            data-image-src="/images/3_portfolio/portfolio_banner.jpg"
+          ></div>
+
+          <div class="bg__gradient"></div>
+        </div>
+        <div class="banner__text">
+          <h1 class="text__title">Meus trabalhos</h1>
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <div class="main__portfolio">
+        <section class="portfolio__projeto">
+          <div class="projeto__imgBox">
+            <img
+              srcset="
+                ./images/3_portfolio/portfolio-projeto-1-lg.jpg 1280w,
+                ./images/3_portfolio/portfolio-projeto-1-md.jpg 1024w
+              "
+              src="./images/3_portfolio/portfolio-projeto-1-sm.png"
+              alt="exemplo do projeto"
+              class="projetoPage__img"
+              id="projeto__img--1"
+            />
+          </div>
+
+          <div>
+            <div class="projeto__date" id="projeto__date--1">
+              <p class="date__text">{23/12/2019}</p>
+            </div>
+            <div class="projeto__title" id="projeto__title--1">
+              Título do Projeto
+            </div>
+            <div class="projeto__description" id="projeto__description--1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+              libero exercitationem cupiditate voluptates modi error.
+            </div>
+            <div class="projeto__ferramentasUsadas">
+              <h3>Ferramentas usadas:</h3>
+              <ul>
+                <li>- Lorem, ipsum dolor.</li>
+                <li>- Lorem, ipsum dolor.</li>
+                <li>- Lorem, ipsum dolor.</li>
+                <li>- Lorem, ipsum dolor.</li>
+              </ul>
+            </div>
+            <a href="#" id="projeto__btn--1">
+              <button class="projeto__btn">
+                Live preview
+              </button>
+            </a>
+          </div>
+        </section>
+
+        <section class="portfolio__projeto portfolio__projeto--inverted">
+          <div class="projeto__imgBox">
+            <picture>
+              <img
+                srcset="
+                  ./images/3_portfolio/portfolio-projeto-2-lg.jpg 1280w,
+                  ./images/3_portfolio/portfolio-projeto-2-md.jpg 1024w
+                "
+                src="./images/3_portfolio/portfolio-projeto-2-sm.jpg"
+                alt="exemplo do projeto"
+                class="projetoPage__img"
+                id="projeto__img--2"
+              />
+            </picture>
+          </div>
+
+          <div>
+            <div class="projeto__date" id="projeto__date--2">
+              <p class="date__text">{11/09/2019}</p>
+            </div>
+            <div class="projeto__title" id="projeto__title--2">
+              Título do Projeto
+            </div>
+            <div class="projeto__description" id="projeto__description--2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              eaque voluptas accusantium repellendus nisi a?
+            </div>
+            <div class="projeto__ferramentasUsadas">
+              <h3>Ferramentas usadas:</h3>
+              <ul>
+                <li>- Lorem, ipsum dolor.</li>
+                <li>- Lorem, ipsum dolor.</li>
+                <li>- Lorem, ipsum dolor.</li>
+                <li>- Lorem, ipsum dolor.</li>
+              </ul>
+            </div>
+            <a href="#" id="projeto__btn--2"
+              ><button class="projeto__btn">
+                Live preview
+              </button></a
+            >
+          </div>
+        </section>
+
+        <section class="portfolio__projeto">
+          <div class="projeto__imgBox">
+            <img
+              srcset="
+                ./images/3_portfolio/portfolio-projeto-3-lg.jpg 1280w,
+                ./images/3_portfolio/portfolio-projeto-3-md.jpg 1024w
+              "
+              src="./images/3_portfolio/portfolio-projeto-3-sm.jpg"
+              alt="exemplo do projeto"
+              class="projetoPage__img"
+              id="projeto__img--3"
+            />
+          </div>
+
+          <div>
+            <div class="projeto__date" id="projeto__date--3">
+              <p class="date__text">{27/11/2019}</p>
+            </div>
+            <div class="projeto__title" id="projeto__title--3">
+              Título do Projeto
+            </div>
+            <div class="projeto__description" id="projeto__description--3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores repellendus soluta amet cumque officia! Quos?
+            </div>
+            <div class="projeto__ferramentasUsadas">
+              <h3>Ferramentas usadas:</h3>
+              <ul>
+                <li>- Lorem, ipsum dolor.</li>
+                <li>- Lorem, ipsum dolor.</li>
+                <li>- Lorem, ipsum dolor.</li>
+                <li>- Lorem, ipsum dolor.</li>
+              </ul>
+            </div>
+            <a href="#" id="projeto__btn--3"
+              ><button class="projeto__btn">
+                Live preview
+              </button></a
+            >
+          </div>
+        </section>
+
+        <section class="portfolio__projeto portfolio__projeto--inverted">
+          <div class="projeto__imgBox">
+            <img
+              srcset="
+                ./images/3_portfolio/portfolio-projeto-4-lg.jpg 1280w,
+                ./images/3_portfolio/portfolio-projeto-4-md.jpg 1024w
+              "
+              src="./images/3_portfolio/portfolio-projeto-4-sm.jpg"
+              alt="exemplo do projeto"
+              class="projetoPage__img"
+              id="projeto__img--4"
+            />
+          </div>
+
+          <div>
+            <div class="projeto__date" id="projeto__date--4">
+              <p class="date__text">{19/08/2018}</p>
+            </div>
+            <div class="projeto__title" id="projeto__title--4">
+              Título do Projeto
+            </div>
+            <div class="projeto__description" id="projeto__description--4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+              impedit id culpa? Tempora, natus consequatur.
+            </div>
+
+            <div class="projeto__ferramentasUsadas">
+              <h3>Ferramentas usadas:</h3>
+              <ul>
+                <li>- Lorem, ipsum dolor.</li>
+                <li>- Lorem, ipsum dolor.</li>
+                <li>- Lorem, ipsum dolor.</li>
+                <li>- Lorem, ipsum dolor.</li>
+              </ul>
+            </div>
+
+            <a href="#" id="projeto__btn--4"
+              ><button class="projeto__btn">
+                Live preview
+              </button></a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <h1 class="footer__title">Criado por <span>Vinicius Bortoletto</span></h1>
+      <img
+        src="/images/0_icones/vini-logo.svg"
+        alt="logo de vinicius bortoletto"
+        class="footer__logo"
+      />
+    </footer>
+
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <!-- Parallax.JS -->
+    <script>
+      $("#parallax__img").parallax({
+        imageSrc: "/images/1_home/home_banner.jpg"
+      });
+    </script>
+
+    <!-- ScrollMagic -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="./main.js?cb=123"></script>
+  </body>
+</html>
