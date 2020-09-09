@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://neo-dev.netlify.app/">
-      <img alt="website mockup" src="https://imgur.com/ucAOcGT" />    
+      <img alt="website mockup" src="https://i.imgur.com/ucAOcGT.png" />    
   </a>
 </p>
 
@@ -31,17 +31,20 @@ This project was developed with the following technologies:
 
 ## :information_source: How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com),  [VS Code](https://code.visualstudio.com/) + VSCode extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16](https://nodejs.org/) or higher + [Npm 6.14.4](https://www.npmjs.com/) or higher and [Gulp.js](https://gulpjs.com) From your command line:
 
 ```bash
 # Clone this repository
 $ git clone https://github.com/vinibortoletto/neo.git
 
-# Open in VS Code
-$ code neo
+# Open directory
+$ cd neo
 
-# In VS Code
-$ alt + l, alt + o
+# Install dependencies
+$ npm install
+
+# Start the app
+$ gulp
 
 ```
 
